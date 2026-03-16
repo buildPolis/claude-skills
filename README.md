@@ -67,6 +67,18 @@ ln -s ~/repos/claude-skills/skills <your-project>/.claude/skills
 /<skill-name>
 ```
 
+## 可用 Skills 清單
+
+目前本倉庫正在建置中，尚未包含任何 skill 檔案。Skills 會陸續新增至 `skills/` 目錄中。
+
+當新的 skill 被加入時，請在下方表格中新增對應的項目：
+
+| Skill 名稱 | 說明 | 檔案路徑 |
+|------------|------|----------|
+| _即將推出_ | — | — |
+
+> **維護提示：** 每次新增 skill 時，請同步更新此表格，方便使用者快速查閱可用的 skills。
+
 ## Project Structure
 
 ```
