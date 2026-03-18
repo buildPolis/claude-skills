@@ -69,13 +69,14 @@ ln -s ~/repos/claude-skills/skills <your-project>/.claude/skills
 
 ## 可用 Skills 清單
 
-目前本倉庫正在建置中，尚未包含任何 skill 檔案。Skills 會陸續新增至 `skills/` 目錄中。
-
-當新的 skill 被加入時，請在下方表格中新增對應的項目：
+### Mobile Development
 
 | Skill 名稱 | 說明 | 檔案路徑 |
 |------------|------|----------|
-| _即將推出_ | — | — |
+| `mobile-dev-gcp-deploy` | 以 Flutter 為主，引導完成 Google Play Console（GCP）上架測試流程，包含 AAB 建置、簽署設定、測試軌道建立、測試者邀請等 | `skills/mobile-dev-gcp-deploy.md` |
+| `mobile-dev-ios-deploy` | 以 Flutter 為主，引導完成 App Store Connect / TestFlight 上架測試流程，包含 Xcode 設定、IPA 建置、TestFlight 分發、App Review 注意事項等 | `skills/mobile-dev-ios-deploy.md` |
+| `mobile-dev-google-oauth` | 以 Flutter 為主，引導在行動裝置 App 中整合 Google Sign-In（Google OAuth），包含 OAuth Client ID 設定、google_sign_in 套件整合、Token 驗證等 | `skills/mobile-dev-google-oauth.md` |
+| `mobile-dev-ios-oauth` | 以 Flutter 為主，引導在行動裝置 App 中整合 Sign in with Apple（iOS OAuth），包含 Apple Developer 設定、sign_in_with_apple 套件整合、後端 Token 驗證、Android 端 Web-based 方案等 | `skills/mobile-dev-ios-oauth.md` |
 
 > **維護提示：** 每次新增 skill 時，請同步更新此表格，方便使用者快速查閱可用的 skills。
 
@@ -83,24 +84,13 @@ ln -s ~/repos/claude-skills/skills <your-project>/.claude/skills
 
 ```
 claude-skills/
-├── README.md
-└── skills/                            # Skill definition files
+├── README.md                          # 專案說明與安裝指南
+└── skills/                            # Skill 定義檔目錄
     ├── mobile-dev-gcp-deploy.md       # Google Play Console 上架測試
     ├── mobile-dev-ios-deploy.md       # App Store Connect / TestFlight 上架測試
     ├── mobile-dev-google-oauth.md     # Google Sign-In 整合
     └── mobile-dev-ios-oauth.md        # Sign in with Apple 整合
 ```
-
-## Available Skills
-
-### Mobile Development
-
-| Skill | 說明 |
-|-------|------|
-| `mobile-dev-gcp-deploy` | 以 Flutter 為主，引導完成 Google Play Console（GCP）上架測試流程，包含 AAB 建置、簽署設定、測試軌道建立、測試者邀請等 |
-| `mobile-dev-ios-deploy` | 以 Flutter 為主，引導完成 App Store Connect / TestFlight 上架測試流程，包含 Xcode 設定、IPA 建置、TestFlight 分發、App Review 注意事項等 |
-| `mobile-dev-google-oauth` | 以 Flutter 為主，引導在行動裝置 App 中整合 Google Sign-In（Google OAuth），包含 OAuth Client ID 設定、google_sign_in 套件整合、Token 驗證等 |
-| `mobile-dev-ios-oauth` | 以 Flutter 為主，引導在行動裝置 App 中整合 Sign in with Apple（iOS OAuth），包含 Apple Developer 設定、sign_in_with_apple 套件整合、後端 Token 驗證、Android 端 Web-based 方案等 |
 
 ## Creating a New Skill
 
